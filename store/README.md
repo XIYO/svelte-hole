@@ -1,38 +1,15 @@
-# create-svelte
+# 스토어의 작동 방식은?
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## 스토어는 어떻게 작동하나요?
 
-## Creating a project
+### 스토어는 클라이언트 사이드, 서버 사이드에서 값을 어떻게 관리하지?
 
-If you're seeing this, you've probably already done this step. Congrats!
+서버와 클라이언트 각 각 메모리에 변수를 할당
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### 클라이언트 사이드에서 값을 변경하면 서버 사이드의 스토어도 값이 같이 변하나?
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+서버와 클라이언트 각 각 메모리에 할당되기 때문에 동기화 기능 없음 SSE, Socket 을 활용해야함. 
 
-## Developing
+### 값이 같이 변한다면 어떻게 전달되는거지?
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+변하지 않음.
