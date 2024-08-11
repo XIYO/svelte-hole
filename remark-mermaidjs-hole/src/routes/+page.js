@@ -2,8 +2,8 @@ import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import rehypeStringify from 'rehype-stringify';
 import remarkRehype from 'remark-rehype';
-// import rehypeMermaid from 'rehype-mermaid';
-import remarkMermaid from 'remark-mermaid';
+import remarkMermaid from 'remark-mermaidjs'
+import rehypeMermaid from 'rehype-mermaid';
 
 async function markdown(markdown) {
 	return unified()
@@ -23,11 +23,12 @@ This is a markdown content.
 \`\`\`mermaid
 graph TD;
 	A-->B;
+	A-->C;
 \`\`\`
 `;
 
 export async function load({ page }) {
-	const post = String(await markdown(markdownContent));
+	const post = await markdown(markdownContent);
 
 	return {
 		post
