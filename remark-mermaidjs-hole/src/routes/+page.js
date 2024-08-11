@@ -8,7 +8,11 @@ import rehypeMermaid from 'rehype-mermaid';
 async function markdown(markdown) {
 	return unified()
 		.use(remarkParse)
-		.use(remarkMermaid)
+		.use(remarkMermaid, {
+			mermaidConfig: {
+				theme: 'dark'
+			}
+		})
 		.use(remarkRehype)
 		// .use(rehypeMermaid)
 		.use(rehypeStringify)

@@ -2,13 +2,16 @@
 // import remarkParse from 'remark-parse';
 // import rehypeStringify from 'rehype-stringify';
 // import remarkRehype from 'remark-rehype';
-// import remarkMermaid from 'remark-mermaidjs'
-// import rehypeMermaid from 'rehype-mermaid';
+// import remarkMermaid from 'remark-mermaidjs';
 //
 // async function markdown(markdown) {
 // 	return unified()
 // 		.use(remarkParse)
-// 		.use(remarkMermaid)
+// 		.use(remarkMermaid, {
+// 			mermaidConfig: {
+// 				theme: 'dark'
+// 			}
+// 		})
 // 		.use(remarkRehype)
 // 		// .use(rehypeMermaid)
 // 		.use(rehypeStringify)
@@ -31,6 +34,6 @@
 // 	const post = String(await markdown(markdownContent));
 //
 // 	return {
-// 		serverPost: post
+// 		post
 // 	};
 // }
