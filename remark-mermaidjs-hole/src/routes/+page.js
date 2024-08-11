@@ -27,7 +27,7 @@ graph TD;
 \`\`\`
 `;
 
-export async function load({ page }) {
+export async function load({ data }) {
 	const post = await markdown(markdownContent);
 
 	return {
