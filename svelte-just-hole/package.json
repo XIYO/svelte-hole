@@ -12,7 +12,11 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"test:integration": "playwright test",
-		"test:unit": "vitest"
+		"test:unit": "vitest",
+		"db:start": "docker compose up",
+		"db:push": "drizzle-kit push",
+		"db:migrate": "drizzle-kit migrate",
+		"db:studio": "drizzle-kit studio"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.46.1",
@@ -20,6 +24,7 @@
 		"@sveltejs/kit": "^2.5.24",
 		"@sveltejs/vite-plugin-svelte": "4.0.0-next.6",
 		"@types/eslint": "^9.6.0",
+		"drizzle-kit": "^0.22.0",
 		"eslint": "^9.9.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.43.0",
@@ -32,5 +37,9 @@
 		"vite": "^5.4.2",
 		"vitest": "^2.0.5"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"drizzle-orm": "^0.31.2",
+		"postgres": "^3.4.4"
+	}
 }
