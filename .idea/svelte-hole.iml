@@ -2,7 +2,23 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/hole/csr-false/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-demo-hole/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-hydration-error-hole/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-hydration-error-hole/build" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-just-hole/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-paraglide-hole/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-paraglide-hole/project.inlang/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-paraglide-hole/src/lib/paraglide/messages" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-paraglide-svlete4-hole/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-shiki-class/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-store-example-hole/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-test-rune-state-link/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-threlte-hole/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-vite-pwa-sveltekit-hole/.svelte-kit" />
+      <excludeFolder url="file://$MODULE_DIR$/hole/svelte-vite-transition-hole/.svelte-kit" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
